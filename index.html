@@ -5,13 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This is Ritvik's Portfolio created by Ritvik as a part of learning Web Development">
+    <meta name="author" content="Ritvik">
+    <meta name="keywords" content="Ritvik, portfolio, web-dev, HTML, CSS, javascript ">
+    <meta property="og:title" content="Ritvik's Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/linkedin_banner_cropped.png">
+    <meta property="og:url" content="https://greyhatguy007.github.io/sample-portfolio/">
+    <meta property="og:description" content="Ritvik's personal portfolio website.">
+    <meta property="og:locate" content="en">
+    <meta property="og:site_name" content="Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_responsive.css">
+    <link rel="icon" href="images/favicon-profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Ritvik's Portfolio</title>
 </head>
 
 <body>
-    <h1>Hello Guys</h1>
-    <p>Learning Web dev, will upload site asap</p>
-    <a href="/site/html/about.html">About me</a>
+    <header class="front">
+        <h1 class="title">Ritvik&nbspPrasad</h1>
+        <h2 class="subtitle">Frontend&nbspDeveloper + Machine&nbspLearning&nbspEnthusiast</h2>
+        <hr class="line" />
+    </header>
+
+    <section class="about front">
+        <p>As a developer, I specialize in creating modular and scalable front-end architectures. As a machine learning Enthusiast I create efficient high accuracy machine learning models using
+            <a href="https://scikit-learn.org/stable/">scikit-learn</a> and
+            <a href="https://www.tensorflow.org/"> tensorflow</a>
+        </p>
+    </section>
+
+    <br/>
+
+    <div class="navbar">
+        <div class="nav-item">
+            <a href="/index.html">About Me</a>
+        </div>
+        <div class="nav-item">
+            <a href="/html/projects.html">Featured Projects</a>
+        </div>
+    </div>
+
+    <section class="projects">
+
+        <h3><u class="back">Featured Projects:</u></h3>
+
+        <section class="clearfix">
+            <h4 class="proj-title">
+                <a href="https://github.com/greyhatguy007/titanic-kaggle">Titanic EDA Prediction</a>
+            </h4>
+            <img src="images/titanic_nn.png" alt="titanic-nn" width="25%" class="img-repr">
+            <p class="description">This is a model on the
+                <a href="https://www.kaggle.com/c/titanic">EDA dataset on kaggle</a> to detect whether a person, based on his/her age, ticket number, etc. would survive on Titanic.</p>
+            <p class="description">This model was created using seuential Api of tensorflow.keras module with 4 input neurons - each corresponding to a feature, 5 hidden neurons with relu activation function and one output neuron with a softmax function.</p>
+            <p class="description">The model is of 0.89 accuracy or in other words 89% accurate on the test dataset provided.</p>
+        </section>
+
+        <section class="clearfix">
+            <h4 class="proj-title">Face Detector</h4>
+            <img src="images/face.png" alt="face-detection-example" width="25%" class="img-repr">
+            <p class="description">
+                This is a face detector trained using
+                <a href="https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53"> Convolutional Neural Netrwork (CNN)</a>. This model is trained using 1500 positive image samples over 200 epochs.
+            </p>
+            <p class="description">
+                This model is able to recogonise a human face upto 90% accuracy. This model is created to build other models on top of this. This model could be thought of an abstract class. Models like mask detection, sentiment analysis can be built on top of this model
+                by training the required samples over this model to reduce the process of training the whole batch again.
+            </p>
+        </section>
+
+        <section class="clearfix">
+            <h4 class="proj-title">Human Motion Detection</h4>
+            <img src="images/human-motion.png" alt="human-motion-detection-example" width="25%" class="img-repr">
+            <p class="description">
+                This model detects human movement using a tensorflow model exported into opencv module. It first
+                <a href="https://towardsdatascience.com/yolo-you-only-look-once-3dbdbb608ec4">YOLO algorithm</a> to detect humans, then uses relative positioning algorithm to detect movement. This model is designed to work on CCTV cameras. This could
+                be used for buglary detection even in dark areas if cameras with infrared capabilities are used to feed input to the program.
+            </p>
+            <p class="description">Any irregular movement may be detected by the program and the alarm will warn the authorities about the illegal entry. Motion detector sensors also have a wide application in home and personal security. It is however, impossible to have a
+                security system without a motion sensor.</p>
+
+        </section>
+
+        <section class="clearfix">
+            <h4 class="proj-title">Vehicle Counter</h4>
+            <img src="images/vehicle-motion.png" alt="vehicle-counter-example" width="25%" class="img-repr">
+            <p class="description">
+                This model detects and counts the number of vehicles passed through a particular region in a particular time. It first
+                <a href="https://towardsdatascience.com/yolo-you-only-look-once-3dbdbb608ec4">YOLO algorithm</a> trained by tensorflow exported to opencv in order to detect vehicle in a given region, uses opencv to draw a boundary on to it and calculates
+                the centroid of the given region. A hypothetical line is taken as a reference in a direction normal to vehicle movement; then the given centroid is checked if it crosses the line and the vehicle count is incremented.
+            </p>
+            <p class=" description ">Vehicle motion detector has a wide application in field of traffic and safety of passengers of vehicle. It can be used to detect lane changing , turning, and speed measurement.</p>
+        </section>
+    </section>
+
 </body>
 
 </html>

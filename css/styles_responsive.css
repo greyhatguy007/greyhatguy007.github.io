@@ -1,0 +1,209 @@
+/* ----------------- global -------------------- */
+
+body {
+    background-color: #030b09;
+    font-family: "Silkscreen", cursive;
+    font-size: small;
+    margin: 3px;
+}
+
+.back {
+    color: #030b09;
+}
+
+.front {
+    color: #dcee33;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+h3 {
+    padding-top: 0.5em;
+}
+
+
+/* ----------------- header -------------------- */
+
+.title {
+    text-align: center;
+    font-family: "Silkscreen", cursive;
+    font-size: 10vw;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 5vw;
+}
+
+.line {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+
+/* ----------------- about -------------------- */
+
+.about {
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin: 5vw;
+}
+
+.about a {
+    color: #1cbdbd;
+}
+
+a:hover {
+    color: #f5fffa;
+    text-decoration: none;
+}
+
+section a {
+    display: inline-block;
+}
+
+
+/* ----------------- projects -------------------- */
+
+.projects>h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.proj-title {
+    clear: both;
+    padding-top: 16px;
+    font-size: 1.16em;
+    text-align: center;
+}
+
+.description {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.projects a:hover {
+    color: #2f4f4f;
+}
+
+.projects {
+    font-family: "Roboto Mono", monospace;
+    background-color: #ffe4c4;
+    clear: both;
+}
+
+.img-repr {
+    float: top;
+    width: 60vw;
+    margin-left: 20vw;
+}
+
+.proj img {
+    padding: 4px;
+    border: #030b09 2px solid;
+    margin: 6px;
+}
+
+
+/* ----------------- fixes -------------------- */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (min-width: 600px) {
+    /* ----------------- global -------------------- */
+    body {
+        background-color: #030b09;
+        font-family: "Silkscreen", cursive;
+        font-size: medium;
+    }
+    .back {
+        color: #030b09;
+    }
+    .front {
+        color: #dcee33;
+    }
+    a {
+        text-decoration: none;
+    }
+    h3 {
+        padding-top: 0.5em;
+    }
+    /* ----------------- header -------------------- */
+    .title {
+        text-align: center;
+        font-family: "Silkscreen", cursive;
+    }
+    .subtitle {
+        text-align: center;
+    }
+    .line {
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    /* ----------------- about -------------------- */
+    .about {
+        font-weight: bolder;
+    }
+    .about a {
+        color: #1cbdbd;
+    }
+    a:hover {
+        color: #f5fffa;
+        text-decoration: none;
+    }
+    /* ----------------- projects -------------------- */
+    .proj-title {
+        clear: both;
+        padding-top: 16px;
+        font-size: 1.16em;
+    }
+    .description {
+        margin-left: 5%;
+    }
+    .projects a:hover {
+        color: #2f4f4f;
+    }
+    .projects {
+        font-family: "Roboto Mono", monospace;
+        background-color: #ffe4c4;
+        clear: both;
+    }
+    .img-repr {
+        float: left;
+        width: 250px;
+        margin-left: 0vw;
+        padding-left: 5%;
+    }
+    .proj img {
+        padding: 4px;
+        border: #030b09 2px solid;
+        margin: 6px;
+    }
+    /* ----------------- fixes -------------------- */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    /* ----------------- header -------------------- */
+    .title {
+        text-align: center;
+        font-family: "Silkscreen", cursive;
+        font-size: 3.5em;
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 1.5em;
+    }
+}

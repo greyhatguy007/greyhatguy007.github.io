@@ -1,0 +1,69 @@
+/* 
+
+This is a navbar css using flexbox 
+
+navigation bar - class : navbar
+navigation items - class : nav-item
+
+*/
+
+.nav-item>a {
+    color: white;
+}
+
+.navbar {
+    clear: both;
+    margin: 0vw 3vw;
+    padding: 0vw 2vw;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 5vw;
+    justify-content: space-around;
+}
+
+.nav-item {
+    background-color: blue;
+    width: 100vw;
+    text-align: center;
+    color: whitesmoke;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 150%;
+    border: 10px blue solid
+}
+
+.nav-item:hover {
+    background-color: rgba(200, 200, 25, 0.5);
+    color: green;
+    border: 10px yellow solid
+}
+
+.nav-item:active {
+    background-color: yellow;
+    color: black;
+    border: 10px black solid;
+}
+
+@media screen and (max-width:1110px) {
+    .navbar {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .nav-item {
+        width: 33vw;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .navbar {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .nav-item {
+        width: 100vw;
+    }
+}

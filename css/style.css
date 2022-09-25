@@ -1,0 +1,99 @@
+/* ----------------- global -------------------- */
+
+body {
+    background-color: #030b09;
+    font-family: "Silkscreen", cursive;
+    font-size: medium;
+}
+
+.back {
+    color: #030b09;
+}
+
+.front {
+    color: #dcee33;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    padding-top: 0.5em;
+}
+
+
+/* ----------------- header -------------------- */
+
+.title {
+    text-align: center;
+    font-family: "Silkscreen", cursive;
+    font-size: 5em;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.line {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+
+/* ----------------- about -------------------- */
+
+.about {
+    font-weight: bolder;
+}
+
+.about a {
+    color: #1cbdbd;
+}
+
+a:hover {
+    color: #f5fffa;
+    text-decoration: none;
+}
+
+
+/* ----------------- projects -------------------- */
+
+.proj-title {
+    clear: both;
+    padding-top: 16px;
+    font-size: 1.16em;
+}
+
+.description {
+    margin-left: 5%;
+}
+
+.projects a:hover {
+    color: #2f4f4f;
+}
+
+.projects {
+    font-family: "Roboto Mono", monospace;
+    background-color: #ffe4c4;
+    clear: both;
+}
+
+.img-repr {
+    float: left;
+}
+
+.proj img {
+    padding: 4px;
+    border: #030b09 2px solid;
+    margin: 6px;
+}
+
+
+/* ----------------- fixes -------------------- */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
