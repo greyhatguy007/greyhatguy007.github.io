@@ -9,12 +9,13 @@ navigation items - class : nav-item
 
 .nav-item>a {
     color: white;
+    display: block;
 }
 
 .navbar {
     clear: both;
     margin: 0vw 3vw;
-    padding: 0vw 2vw;
+    padding: 1vw 2vw;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
@@ -39,7 +40,8 @@ navigation items - class : nav-item
 .nav-item:hover {
     background-color: rgba(200, 200, 25, 0.5);
     color: green;
-    border: 10px yellow solid
+    border: 10px yellow solid;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0);
 }
 
 .nav-item:active {
