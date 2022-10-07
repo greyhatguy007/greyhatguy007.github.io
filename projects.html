@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects</title>
+    <link rel="icon" href="./images/favicon-profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/index.0671f65b.css">
+</head>
+
+<body class="h-14 bg-gradient-to-r md:bg-gradient-to-r  from-purple-500 to-pink-600 ">
+    <header class="bg-gray-900">
+        <h1 class="title">Featured Projects</h1>
+        <h2 class="subtitle">Some of My Presentable Work</h2>
+    </header>
+    <main>
+        <div class="md:bg-scroll bg-scroll  pt-1 " style="background-image: url('/images/laptop-bg.jpeg');background-repeat:no-repeat;background-size:cover;">
+            <nav class="bg-transparent  from-gray-900 via-gray-600 to-gray-900 mt-5 py-2 flex flex-col md:flex-row justify-around md:rounded-full rounded-2xl mx-5">
+                <div class="nav-element">
+                    <a href="./index.html" class="block">About Me</a>
+                </div>
+                <div class="nav-element">
+                    <a href="./projects.html" class="block">Featured Projects</a>
+                </div>
+                <div class="nav-element">
+                    <a href="./certifications.html" class="block">Certifications</a>
+                </div>
+            </nav>
+
+            <div class="text-lime-400 backdrop-opacity-100 backdrop-blur-md bg-transparent  sm:text-xl text-center mt-10 pt-5 pb-10 text-xl font-extrabold font-mono md:px-3" style="line-height: 2rem;">
+                <p>As a developer, I specialize in creating modular and scalable front-end responsive architectures. As a machine learning Enthusiast I create efficient high accuracy machine learning models using
+                    <a href=" https://scikit-learn.org/stable/ " class="hover:text-blue-900 text-blue-500 ">scikit-learn</a> and
+                    <a href="https://www.tensorflow.org/ " class="hover:text-blue-900  text-blue-500 "> tensorflow</a></p>
+                <p>My Works in the domain of machine learning include neural networks trained based on kaggle datasets, image-classification using convolutional neural networks and opencv.</p>
+                <p>In the domain of front end web development, responsive websites have been created for business clients as a part of certification projects.</p>
+            </div>
+        </div>
+        <div>
+
+            <h2 class=" underline text-black font-mono text-5xl sm:text-6xl text-center font-extrabold mt-5 sm:mt-10 mb-16">Projects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-2 mx-5">
+
+                <div class="p-10 pt-4 m-4 bg-black text-red-100 rounded-3xl transition ease-in-out delay-0 2xl:hover:-translate-y-1  2xl:hover:scale-105 2xl:hover:shadow-3xl hover:shadow-slate-900 2xl:hover:bg-gradient-to-l from-neutral-900 to-neutral-500 duration-200 shadow-white">
+                    <p class="text-center text-3xl mb-8 mt-4 underline">Titanic EDA Prediction</p>
+                    <div class="grid grid-cols-1 2xl:grid-cols-2">
+                        <img src="/images/titanic_nn.png" class="bg-cover my-5 inline mb-10 rounded-xl border-4 border-gray-600">
+                        <p class="inline-block  mx-auto my-auto text-xl 2xl:ml-3 ">This is a model on the EDA dataset on kaggle to detect whether a person, based on his/her age, ticket number, etc. would survive on Titanic. This model was created using sequential Api of tensorflow.keras module with 4 input neurons
+                            - each corresponding to a feature, 5 hidden neurons with relu activation function and one output neuron with a softmax function. The model is of 0.89 accuracy or in other words 89% accurate on the test dataset provided.</p>
+                    </div>
+                    <a href="https://github.com/greyhatguy007/titanic-kaggle" target="_blank"><img src="/images/github.png" class="mx-2 invert max-h-7 md:max-h-10 float-right"></a>
+                </div>
+
+                <div class="p-10 pt-4 m-4 bg-black text-red-100 rounded-3xl transition ease-in-out delay-0 2xl:hover:-translate-y-1  2xl:hover:scale-105 2xl:hover:shadow-3xl hover:shadow-slate-900 2xl:hover:bg-gradient-to-l from-neutral-900 to-neutral-500 duration-200 shadow-white">
+                    <p class="text-center text-3xl mb-8 mt-4 underline">Face Detector</p>
+                    <div class="grid grid-cols-1 2xl:grid-cols-2">
+                        <img src="/images/face.png" class="bg-cover my-5 inline mb-10 rounded-xl border-4 border-gray-600">
+                        <p class="inline-block  mx-auto my-auto text-xl 2xl:ml-3 "> This is a face detector trained using Convolutional Neural Network (CNN). This model is trained using 1500 positive image samples over 200 epochs. This model is able to recognize a human face upto 90% accuracy. This model is created
+                            to build other models on top of this. This model could be thought of an abstract class. Models like mask detection, sentiment analysis can be built on top of this model by training the required samples over this model to reduce
+                            the process of training the whole batch again. </p>
+                    </div>
+                    <a href="https://github.com/greyhatguy007/optical-recogonisers" target="_blank"><img src="/images/github.png" class="mx-2 invert max-h-7 md:max-h-10 float-right"></a>
+                </div>
+
+                <div class="p-10 pt-4 m-4 bg-black text-red-100 rounded-3xl transition ease-in-out delay-0 2xl:hover:-translate-y-1  2xl:hover:scale-105 2xl:hover:shadow-3xl hover:shadow-slate-900 2xl:hover:bg-gradient-to-l from-neutral-900 to-neutral-500 duration-200 shadow-white">
+                    <p class="text-center text-3xl mb-8 mt-4 underline">Human Motion Detection</p>
+                    <div class="grid grid-cols-1 2xl:grid-cols-2">
+                        <img src="/images/human-motion.png" class="bg-cover my-5 inline mb-10 rounded-xl border-4 border-gray-600">
+                        <p class="inline-block  mx-auto my-auto text-xl 2xl:ml-3 "> This model detects human movement using a tensorflow model exported into opencv module. It first YOLO algorithm to detect humans, then uses relative positioning algorithm to detect movement. This model is designed to work on CCTV
+                            cameras. This could be used for burglary detection even in dark areas if cameras with infrared capabilities are used to feed input to the program. Any irregular movement may be detected by the program and the alarm will warn
+                            the authorities about the illegal entry. Motion detector sensors also have a wide application in home and personal security. It is however, impossible to have a security system without a motion sensor. </p>
+                    </div>
+                    <a href="https://github.com/greyhatguy007/optical-recogonisers" target="_blank"><img src="/images/github.png" class="mx-2 invert max-h-7 md:max-h-10 float-right"></a>
+                </div>
+
+                <div class="p-10 pt-4 m-4 bg-black text-red-100 rounded-3xl transition ease-in-out delay-0 2xl:hover:-translate-y-1  2xl:hover:scale-105 2xl:hover:shadow-3xl hover:shadow-slate-900 2xl:hover:bg-gradient-to-l from-neutral-900 to-neutral-500 duration-200 shadow-white">
+                    <p class="text-center text-3xl mb-8 mt-4 underline">Vehicle Counter</p>
+                    <div class="grid grid-cols-1 2xl:grid-cols-2">
+                        <img src="/images/vehicle-motion.png" class="bg-cover my-5 inline mb-10 rounded-xl border-4 border-gray-600">
+                        <p class="inline-block  mx-auto my-auto text-xl 2xl:ml-3 "> This model detects and counts the number of vehicles passed through a particular region in a particular time. It first YOLO algorithm trained by tensorflow exported to opencv in order to detect vehicle in a given region, uses opencv
+                            to draw a boundary on to it and calculates the centroid of the given region. A hypothetical line is taken as a reference in a direction normal to vehicle movement; then the given centroid is checked if it crosses the line and
+                            the vehicle count is incremented. Vehicle motion detector has a wide application in field of traffic and safety of passengers of vehicle. It can be used to detect lane changing , turning, and speed measurement.
+                        </p>
+                    </div>
+
+                    <a href="https://github.com/greyhatguy007/optical-recogonisers" target="_blank"><img src="/images/github.png" class="invert max-h-7 md:max-h-10 float-right"></a>
+                </div>
+
+                <div class="p-10 pt-4 m-4 bg-black text-red-100 rounded-3xl transition ease-in-out delay-0 2xl:hover:-translate-y-1  2xl:hover:scale-105 2xl:hover:shadow-3xl hover:shadow-slate-900 2xl:hover:bg-gradient-to-l from-neutral-900 to-neutral-500 duration-200 shadow-white">
+                    <p class="text-center text-3xl mb-8 mt-4 underline">Website - Little Lemon Restaurant</p>
+                    <div class="grid grid-cols-1 2xl:grid-cols-2">
+                        <a href="https://greyhatguy007.github.io/little-lemon-coursera/"><img src="/images/little-lemon-website.png" class="bg-cover my-5 inline mb-10 rounded-xl border-4 border-gray-600"></a>
+                        <p class="inline-block  mx-auto my-auto text-xl 2xl:ml-3 "> This website has been created as a coursera project for end of course assessment for the course <em>Advance HTML and Css</em> by <em>Meta</em>. The website is created for a fictitious restaurant known as <em>Little Lemon</em>.
+                            The website is responsive and scales over all screen sizes.</p>
+                    </div>
+
+                    <a href="https://github.com/greyhatguy007/little-lemon-coursera" target="_blank"><img src="/images/github.png" class="mx-2 invert max-h-7 md:max-h-10 float-right"></a>
+                    <a href="https://greyhatguy007.github.io/little-lemon-coursera/" target="_blank"><img src="/images/website-icon.png" class="mx-2 invert max-h-7 md:max-h-10 float-right"></a>
+                </div>
+
+
+            </div>
+    </main>
+
+</body>
+
+</html>
